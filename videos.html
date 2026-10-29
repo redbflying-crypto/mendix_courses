@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Training Class Videos</title>
+<style>
+:root{--bg:#f7f8fa;--card:#fff;--ink:#1d2330;--muted:#5d6678;--line:#e1e5ec;--accent:#0a5cff;--accent-soft:#e8efff;--warn:#fff4dc;--warn-ink:#7a5200}
+@media (prefers-color-scheme:dark){:root{--bg:#12151b;--card:#1b1f27;--ink:#e6e9ef;--muted:#9aa3b5;--line:#2c323d;--accent:#6c9dff;--accent-soft:#1f2a44;--warn:#33290f;--warn-ink:#f3cf7a}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--accent)}
+.wrap{max-width:860px;margin:0 auto;padding:24px 16px 64px}
+header.hero{border-bottom:1px solid var(--line);padding-bottom:16px;margin-bottom:20px}
+header.hero h1{margin:0 0 4px;font-size:30px;line-height:1.2}
+header.hero p{margin:4px 0;color:var(--muted);font-size:14px}
+section{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:20px 24px;margin-bottom:20px}
+h2{margin-top:0;font-size:22px}
+.intro{color:var(--muted);margin-top:-4px}
+.video{border:1px solid var(--line);border-radius:8px;padding:12px 14px;margin:12px 0}
+.video h3{margin:0 0 4px;font-size:17px}
+.meta{font-size:13px;color:var(--muted)}
+.meta span+span::before{content:"·";margin:0 6px}
+.video p{margin:6px 0 0}
+.tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:99px;background:var(--accent-soft);color:var(--accent)}
+.note{background:var(--warn);color:var(--warn-ink);border-radius:8px;padding:10px 14px;font-size:14px}
+code{font-size:14px}
+.pager{display:flex;gap:12px;margin:0 0 20px}
+.pager a{flex:0 1 48%;border:1px solid var(--line);border-radius:8px;padding:10px 14px;background:var(--card);text-decoration:none}
+.pager a:hover{border-color:var(--accent)}
+.pager .next{margin-left:auto;text-align:right}
+.pager small{display:block;color:var(--muted);font-size:12px}
+@media (max-width:760px){section{padding:16px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <h1>Training Class Videos</h1>
+  <p>Quick links: <a href="mendix.html">Mendix Certification Guide</a> · <a href="#part1">Part 1 videos</a> · <a href="#part2">Part 2 videos</a> · <a href="other-videos.html">Other related videos</a></p>
+</header>
+
+<nav class="pager" aria-label="Video pages">
+  <a class="prev" href="mendix.html"><small>← Previous</small>Mendix Certification Guide</a>
+  <a class="next" href="other-videos.html"><small>Next →</small>Other related videos</a>
+</nav>
+
+<section id="part1">
+  <h2>Part 1: Fundamentals and rapid app building</h2>
+  <p class="intro">Covers Studio Pro setup, domain models (entities and attributes), basic microflows, page layouts and security basics.</p>
+
+  <div class="video">
+    <h3><a href="https://www.youtube.com/watch?v=JEkHpIohJ4o">Become a Rapid Developer with Mendix | Beginner Walkthrough (2024)</a></h3>
+    <div class="meta"><span>Mendix Mastery</span><span>~2 hr 17 min</span><span class="tag">Rapid</span></div>
+    <p>A step-by-step walkthrough of Studio Pro from scratch: setting up entities, creating list and detail pages, wiring basic microflow buttons, and understanding app security. Goes with the <a href="mendix.html#path-rapid">Become a Rapid Developer</a> path.</p>
+  </div>
+
+  <div class="video">
+    <h3><a href="https://www.youtube.com/watch?v=t4EnL_0_e5o">Hello Mendix - Understanding Entities &amp; Databases</a></h3>
+    <div class="meta"><span>Mendix Community</span><span>~3 min</span><span class="tag">Rapid</span></div>
+    <p>A quick explanation of relational data modeling in Mendix domain models.</p>
+  </div>
+</section>
+
+<section id="part2">
+  <h2>Part 2: Intermediate microflows, XPath and integrations</h2>
+  <p class="intro">Covers querying data with XPath, sub-microflow design, event processing and consuming REST APIs.</p>
+
+  <div class="video">
+    <h3><a href="https://www.youtube.com/watch?v=G7BWnrHnWqQ">Constrain Your Data Using XPath | Mendix Walkthrough (2024)</a></h3>
+    <div class="meta"><span>Mendix Mastery</span><span>~43 min</span><span class="tag">Intermediate</span></div>
+    <p>XPath constraints in practice: filtering data grids, retrieve queries in microflows, and constraints on attributes and associations. Goes with the <a href="mendix.html#path-xpath">Constrain Your Data Using XPath</a> path.</p>
+  </div>
+
+  <div class="video">
+    <h3><a href="https://www.youtube.com/watch?v=I8-2D9rH42w">Building an Event App Using Microflows | Mendix Walkthrough (2024)</a></h3>
+    <div class="meta"><span>Mendix Mastery</span><span>~2 hr 49 min</span><span class="tag">Intermediate</span></div>
+    <p>Intermediate business logic built step by step: nested microflows and sub-microflows, decision splits, error handling and transactional database actions. Goes with the <a href="mendix.html#path-event">Building an Event App Using Microflows</a> path.</p>
+  </div>
+
+  <div class="video">
+    <h3><a href="https://www.youtube.com/watch?v=xEYi-BN11Gg">HOW TO CONSUME A REST API | Mendix 10</a></h3>
+    <div class="meta"><span>Mendix With Me</span><span>~11 min</span><span class="tag">Integration</span></div>
+    <p>Consuming external REST endpoints: JSON structures, import and export mappings, and the <code>Call REST</code> action in microflows. Background for the <a href="mendix.html#path-rest">Design and Publish a REST API</a> path.</p>
+  </div>
+
+  <div class="video">
+    <h3><a href="https://www.youtube.com/watch?v=u9A5dWSKUZ8">Build your First Api Integration with Mendix and Postman</a></h3>
+    <div class="meta"><span>Matt Talks Mendix</span><span>~16 min</span><span class="tag">Integration</span></div>
+    <p>An end-to-end setup: testing endpoints in Postman and connecting external services to a Mendix app.</p>
+  </div>
+</section>
+
+<p>Want more? See <a href="other-videos.html">Other related videos</a> for platform overviews, Excel import, Workflow, design systems and an exam guide.</p>
+
+<nav class="pager" aria-label="Video pages">
+  <a class="prev" href="mendix.html"><small>← Previous</small>Mendix Certification Guide</a>
+  <a class="next" href="other-videos.html"><small>Next →</small>Other related videos</a>
+</nav>
+
+<p class="note">You need an internet connection to watch the videos on YouTube. All six links and channel names were checked in October 2026. The durations are approximate.</p>
+
+</div>
+</body>
+</html>

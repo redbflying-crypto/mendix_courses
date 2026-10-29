@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mendix Certification Guide</title>
+<style>
+:root{--bg:#f7f8fa;--card:#fff;--ink:#1d2330;--muted:#5d6678;--line:#e1e5ec;--accent:#0a5cff;--accent-soft:#e8efff;--warn:#fff4dc;--warn-ink:#7a5200}
+@media (prefers-color-scheme:dark){:root{--bg:#12151b;--card:#1b1f27;--ink:#e6e9ef;--muted:#9aa3b5;--line:#2c323d;--accent:#6c9dff;--accent-soft:#1f2a44;--warn:#33290f;--warn-ink:#f3cf7a}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--accent)}
+.wrap{max-width:980px;margin:0 auto;padding:24px 16px 64px;display:grid;grid-template-columns:220px 1fr;gap:32px}
+nav.toc{position:sticky;top:16px;align-self:start;font-size:14px}
+nav.toc ol{list-style:none;padding:0;margin:0}
+nav.toc li{margin:4px 0}
+nav.toc a{color:var(--muted);text-decoration:none}
+nav.toc a:hover{color:var(--accent)}
+nav.toc .sub{padding-left:12px}
+header.hero{grid-column:1/-1;border-bottom:1px solid var(--line);padding-bottom:16px}
+header.hero h1{margin:0 0 4px;font-size:30px;line-height:1.2}
+header.hero p{margin:4px 0;color:var(--muted);font-size:14px}
+main section{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:20px 24px;margin-bottom:20px}
+h2{margin-top:0;font-size:22px}
+h3{font-size:17px;margin:20px 0 6px}
+table{border-collapse:collapse;width:100%;font-size:14px;margin:8px 0}
+th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+th{background:var(--accent-soft)}
+.levels{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.level{border:1px solid var(--line);border-radius:8px;padding:12px}
+.level b{display:block}
+.tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:99px;background:var(--accent-soft);color:var(--accent);margin-right:4px}
+.note{background:var(--warn);color:var(--warn-ink);border-radius:8px;padding:10px 14px;font-size:14px}
+.ext{font-size:13px;color:var(--muted);word-break:break-all}
+dl dt{font-weight:600;margin-top:10px}
+dl dd{margin:2px 0 0 0;color:var(--muted)}
+.back{font-size:13px}
+@media (max-width:760px){.wrap{grid-template-columns:1fr}nav.toc{position:static}.levels{grid-template-columns:1fr}main section{padding:16px}}
+@media print{nav.toc{display:none}.wrap{display:block}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <h1>Mendix Certification Program: Offline Study Guide</h1>
+  <p>Quick links: <a href="https://kunalsharda.com/2025/03/02/mendix-certification-program-a-complete-guide/">Mendix Certification Guide</a> · <a href="https://academy.mendix.com/link/paths/174/AI-and-GenAI-Fundamentals">AI and GenAI Fundamentals</a> · <a href="https://academy.mendix.com/link/paths/175/Create-Your-First-Agent">Create Your First Agent</a> · <a href="videos.html">Training class videos</a></p>
+</header>
+
+<nav class="toc" aria-label="Contents">
+  <ol>
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#compare">Exams at a glance</a></li>
+    <li><a href="#rapid">1. Rapid Developer</a></li>
+    <li><a href="#intermediate">2. Intermediate Developer</a></li>
+    <li><a href="#advanced">3. Advanced Developer</a></li>
+    <li><a href="#benefits">Benefits</a></li>
+    <li><strong>Linked content</strong></li>
+    <li class="sub"><a href="#faq-rapid">Rapid FAQ (docx)</a></li>
+    <li class="sub"><a href="#guide-proctored">Intermediate &amp; Advanced exam guides (docx)</a></li>
+    <li class="sub"><a href="#paths">Academy learning paths</a></li>
+    <li class="sub"><a href="#resources">Other resources</a></li>
+    <li class="sub"><a href="#free-courses">Free online courses</a></li>
+    <li class="sub"><a href="#related">Other articles</a></li>
+  </ol>
+</nav>
+
+<main>
+
+<section id="overview">
+  <h2>Overview</h2>
+  <p>Mendix is a low-code platform for building and shipping business apps quickly. The certification program has three tiers, and you take them in order. Each tier is a prerequisite for the next.</p>
+  <div class="levels">
+    <div class="level"><span class="tag">Entry</span><b>Rapid Developer</b>Newcomers, business analysts and developers starting out on Mendix.</div>
+    <div class="level"><span class="tag">Mid</span><b>Intermediate Developer</b>People who have built Mendix apps and want to go further.</div>
+    <div class="level"><span class="tag">Expert</span><b>Advanced Developer</b>Experienced developers and architects working on large, enterprise-grade apps.</div>
+  </div>
+</section>
+
+<section id="compare">
+  <h2>Exams at a glance</h2>
+  <table>
+    <thead><tr><th></th><th>Rapid</th><th>Intermediate</th><th>Advanced</th></tr></thead>
+    <tbody>
+      <tr><th>Questions</th><td>50 multiple choice</td><td>50 multiple choice</td><td>50 multiple choice</td></tr>
+      <tr><th>Time</th><td>60 min per the article (the FAQ says there is no fixed limit, and about 1 hour is typical)</td><td>90 min</td><td>120 min</td></tr>
+      <tr><th>Fee</th><td>Free</td><td>€141</td><td>€141</td></tr>
+      <tr><th>Pass mark</th><td>75% overall, and at least 40% in each module</td><td>75% overall, no per-section minimum</td><td>75% overall, no per-section minimum</td></tr>
+      <tr><th>Prerequisite</th><td>None</td><td>Rapid certification</td><td>Intermediate certification</td></tr>
+      <tr><th>Proctoring</th><td>Not proctored</td><td>Proctored, closed book</td><td>Proctored, open to some resources (see <a href="#guide-proctored">rules</a>)</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section id="rapid">
+  <h2>1. Mendix Rapid Developer</h2>
+  <p>The entry-level certificate. It covers the platform basics so you can start building simple apps.</p>
+  <h3>Who it suits</h3>
+  <ul>
+    <li>Business users and analysts who want to understand how Mendix works</li>
+    <li>Developers who are new to Mendix</li>
+    <li>Anyone who wants to build small low-code apps</li>
+  </ul>
+  <h3>How to prepare</h3>
+  <ul>
+    <li>Complete the Academy path <a href="#path-rapid">Become a Rapid Developer</a>.</li>
+    <li>Optionally, add <a href="#path-ai">AI and GenAI Fundamentals</a> for background on AI in Mendix.</li>
+    <li>Practise in Studio Pro, using the <a href="#res-docs">Mendix documentation</a>.</li>
+    <li>Optionally, take an <a href="#res-ilt">instructor-led training</a>.</li>
+    <li>Read the <a href="#faq-rapid">Rapid exam FAQ</a> (<a href="https://kunalsharda.com/wp-content/uploads/2025/03/mendix-rapid-faqs.docx" download>download .docx</a>).</li>
+  </ul>
+</section>
+
+<section id="intermediate">
+  <h2>2. Mendix Intermediate Developer</h2>
+  <p>For people with hands-on Mendix experience who want a deeper understanding of the platform. Rapid certification is required first.</p>
+  <h3>Who it suits</h3>
+  <ul>
+    <li>Developers who have already built Mendix apps</li>
+    <li>IT professionals growing their low-code skills</li>
+    <li>Analysts who want to add to their Mendix knowledge</li>
+  </ul>
+  <h3>How to prepare</h3>
+  <ul>
+    <li>Work through these Academy paths: <a href="#path-collab">Unlocking True Collaboration</a>, <a href="#path-xpath">Constrain Your Data Using XPath</a>, <a href="#path-pages">Create an App with Advanced Page Building</a>, <a href="#path-event">Building an Event App Using Microflows</a> and <a href="#path-domain">Expand Your Domain Modeling Skills</a>.</li>
+    <li>Optionally, try <a href="#path-agent">Create Your First Agent</a> to build an AI agent in Mendix.</li>
+    <li>Build and deploy a real app end to end.</li>
+    <li>Get involved in the <a href="#res-forum">Mendix forum</a> and in training sessions.</li>
+    <li>Optionally, take an <a href="#res-ilt">instructor-led training</a>.</li>
+    <li>Read the <a href="#guide-proctored">Intermediate exam guide</a> (<a href="https://kunalsharda.com/wp-content/uploads/2025/03/mendix-intermediate-faqs-1.docx" download>download .docx</a>).</li>
+  </ul>
+</section>
+
+<section id="advanced">
+  <h2>3. Mendix Advanced Developer</h2>
+  <p>The top tier, for proving expert-level skill. Intermediate certification is required first.</p>
+  <h3>Who it suits</h3>
+  <ul>
+    <li>Experienced Mendix developers</li>
+    <li>Architects designing complex enterprise apps</li>
+    <li>People responsible for large Mendix rollouts</li>
+  </ul>
+  <h3>How to prepare</h3>
+  <ul>
+    <li>Work through these Academy paths: <a href="#path-adv-domain">Advanced Domain Model Skills</a>, <a href="#path-data">Win at Working with Data</a>, <a href="#path-security">Configure Advanced Security</a>, <a href="#path-adv-xpath">Constrain Your Data Using Advanced XPath</a>, <a href="#path-rest">Design and Publish a REST API</a>, <a href="#path-logging">Track Application Behavior with Logging</a>, <a href="#path-microflows">Master Modeling Microflows</a> and <a href="#path-errors">Error Handling</a>.</li>
+    <li>Get experience on large, real-world projects.</li>
+    <li>Ask the community to review your solutions.</li>
+    <li>Optionally, take an <a href="#res-ilt">instructor-led training</a>.</li>
+    <li>Read the <a href="#guide-proctored">Advanced exam guide</a> (<a href="https://kunalsharda.com/wp-content/uploads/2025/03/mendix-advanced-faqs.docx" download>download .docx</a>).</li>
+  </ul>
+</section>
+
+<section id="benefits">
+  <h2>Why get certified</h2>
+  <p>The article lists four benefits: you stand out in the low-code job market, the certificates are recognised by employers worldwide, certified developers tend to earn more, and many employers prefer to hire them. The author ends by encouraging readers to start with the Rapid exam and work up through the tiers.</p>
+</section>
+
+<!-- ============ LINKED CONTENT ============ -->
+
+<section id="faq-rapid">
+  <h2>Linked file: Rapid Developer exam FAQ</h2>
+  <p class="ext">Word file: <a href="https://kunalsharda.com/wp-content/uploads/2025/03/mendix-rapid-faqs.docx" download>mendix-rapid-faqs.docx</a> · Online: <a href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fkunalsharda.com%2Fwp-content%2Fuploads%2F2025%2F03%2Fmendix-rapid-faqs.docx&amp;wdOrigin=BROWSELINK">view in browser</a> (a Mendix Academy FAQ shared on the blog)</p>
+  <dl>
+    <dt>How is the exam structured?</dt>
+    <dd>50 questions, five from each of the ten course modules.</dd>
+    <dt>Is it timed?</dt>
+    <dd>The FAQ says there is no strict time limit and that most candidates take about an hour. The article says 60 minutes.</dd>
+    <dt>What kind of questions?</dt>
+    <dd>All multiple choice. Questions cover course theory and the hands-on assignments.</dd>
+    <dt>Are wrong answers penalised?</dt>
+    <dd>No. To pass, you need 75% overall and at least 40% in every module.</dd>
+    <dt>Is the course enough on its own?</dt>
+    <dd>Yes. The <a href="#path-rapid">Become a Rapid Developer</a> path is enough, provided you also complete its build assignments (the LearnNow app).</dd>
+    <dt>How hard is it?</dt>
+    <dd>A little harder than the knowledge checks at the end of each module. If you score around 80% on those checks, you are likely ready. A typical question asks which model element must exist before you can add validation rules (the answer is entities).</dd>
+    <dt>Contact</dt>
+    <dd>academy@mendix.com</dd>
+  </dl>
+</section>
+
+<section id="guide-proctored">
+  <h2>Linked files: Intermediate &amp; Advanced exam guides</h2>
+  <p class="ext">Word files: <a href="https://kunalsharda.com/wp-content/uploads/2025/03/mendix-intermediate-faqs-1.docx" download>mendix-intermediate-faqs-1.docx</a> and <a href="https://kunalsharda.com/wp-content/uploads/2025/03/mendix-advanced-faqs.docx" download>mendix-advanced-faqs.docx</a> · Online: <a href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fkunalsharda.com%2Fwp-content%2Fuploads%2F2025%2F03%2Fmendix-intermediate-faqs-1.docx&amp;wdOrigin=BROWSELINK">Intermediate</a>, <a href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fkunalsharda.com%2Fwp-content%2Fuploads%2F2025%2F03%2Fmendix-advanced-faqs.docx&amp;wdOrigin=BROWSELINK">Advanced</a> (Mendix Academy exam guides, v3.0, July 2024). The two guides are almost identical. The differences are listed in the table below.</p>
+
+  <h3>Registering and access</h3>
+  <ul>
+    <li>Register with the “Get Certified” button on the certification's page. You can start the exam straight away, or later from <em>My Exam Registrations</em> in the Academy or from the confirmation email.</li>
+    <li>The exam link is valid for <strong>30 days</strong> and works for <strong>one attempt</strong> only. Fees are not refunded if the link expires.</li>
+    <li>The link is personal. If you forward the confirmation email to another address, the link stops working. To use another computer, copy just the link.</li>
+  </ul>
+
+  <h3>Setting up</h3>
+  <ul>
+    <li>Use an up-to-date OS and Chrome, Firefox or Edge, and run the platform's system compatibility check first. The link to it sits just above the start button.</li>
+    <li>Make sure your internet and power are stable and your webcam works. You must stay on camera the whole time.</li>
+    <li>Use a single monitor in a quiet room, and allow about 15 minutes for setup.</li>
+  </ul>
+
+  <h3>Rules for both exams</h3>
+  <ul>
+    <li>The exam is proctored, and your screen and webcam are recorded. Recording or copying questions counts as theft.</li>
+    <li>Not allowed: notes, Q&amp;A documents, a second screen or computer, phones and tablets, headphones or earplugs, music, other people in the room, talking or reading questions aloud, chat and meeting apps, and leaving your desk for more than 2 minutes.</li>
+    <li>Clicking “Stop Sharing” ends the attempt immediately, and it counts as a fail.</li>
+    <li>You get up to four warnings. A fifth warning ends the exam automatically.</li>
+    <li>If you break the rules, your result is voided and you are banned from all Mendix exams for three months. Mendix may also tell your employer.</li>
+  </ul>
+
+  <table>
+    <thead><tr><th>Difference</th><th>Intermediate</th><th>Advanced</th></tr></thead>
+    <tbody>
+      <tr><td>Time limit</td><td>90 minutes</td><td>120 minutes</td></tr>
+      <tr><td>Resources</td><td>Closed book. You may not leave the exam window, open other apps or use web translation.</td><td>You may use Mendix Docs, Academy learning paths, Studio Pro (including your own projects) and a browser translation tool, all on the same screen.</td></tr>
+      <tr><td>Purpose</td><td>Shows you can join a delivery team and contribute at every stage of a project.</td><td>Shows you can build production-ready apps.</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Format, results and retakes</h3>
+  <ul>
+    <li>50 multiple-choice questions. You need 75% overall to pass (74% fails), and there is no per-section minimum. Answers are submitted automatically when time runs out.</li>
+    <li>Start with the blue “Start Test” button and end with “Finish Test”. You see a provisional score straight away. The official result arrives by email within three business days after review, and you get a certificate if you pass.</li>
+    <li>You only get your overall and per-section scores. Mendix does not reveal which questions you got wrong.</li>
+    <li>If you fail, you can retake after <strong>one week</strong>. After later fails, the wait is <strong>two weeks</strong>. You pay the full fee again for every attempt.</li>
+    <li>If an image is hard to read, click it or change your screen resolution.</li>
+    <li>For technical problems, contact the exam platform's help desk (mettl-support@mercer.com). To report a question you think is wrong, email academy@mendix.com from memory, without screenshots.</li>
+  </ul>
+</section>
+
+<section id="paths">
+  <h2>Linked pages: Mendix Academy learning paths</h2>
+  <p>These are short summaries of each path the article links to. Module counts and hours come from the Academy catalog as listed in October 2026, where shown. You need a free Mendix account to open the paths themselves.</p>
+
+  <h3 id="path-rapid">Become a Rapid Developer <span class="tag">Rapid</span></h3>
+  <p>The core beginner course: build your first low-code apps in Studio Pro. It has 21 modules and takes about 16 hours. <span class="ext"><a href="https://academy.mendix.com/link/paths/31/Become-a-Rapid-Developer">academy.mendix.com/link/paths/31</a></span></p>
+
+  <h3 id="path-ai">AI and GenAI Fundamentals <span class="tag">Rapid</span></h3>
+  <p>An introduction to the vocabulary of AI, generative AI and AI agents. It has 6 modules. <span class="ext"><a href="https://academy.mendix.com/link/paths/174/AI-and-GenAI-Fundamentals">/paths/174</a></span></p>
+
+  <h3 id="path-agent">Create Your First Agent <span class="tag">Intermediate</span></h3>
+  <p>A hands-on build of a single AI agent inside a Mendix app, set in an IT helpdesk scenario. You create the agent, give it tools, set up a knowledge base and connect it, then test how the agent behaves. It has 6 modules and takes about 4 hours. You should finish <a href="#path-ai">AI and GenAI Fundamentals</a> first, and the exercises need Studio Pro 11.12.1 or later. <span class="ext"><a href="https://academy.mendix.com/link/paths/175/Create-Your-First-Agent">/paths/175</a></span></p>
+
+  <h3 id="path-collab">Unlocking True Collaboration <span class="tag">Intermediate</span></h3>
+  <p>How to work as a team once you start building real company apps in Mendix. It has 5 modules and takes about 2 hours. <span class="ext"><a href="https://academy.mendix.com/link/paths/61/Unlocking-True-Collaboration">/paths/61</a></span></p>
+
+  <h3 id="path-xpath">Constrain Your Data Using XPath <span class="tag">Intermediate</span></h3>
+  <p>Writing XPath constraints to filter and show the data you need. It has 5 modules and takes about 4 hours. <span class="ext"><a href="https://academy.mendix.com/link/paths/62/Constrain-Your-Data-Using-XPath">/paths/62</a></span></p>
+
+  <h3 id="path-pages">Create an App with Advanced Page Building <span class="tag">Intermediate</span></h3>
+  <p>Using page templates to build polished pages such as wizards, reports and a custom login screen. It has 8 modules and takes about 8 hours. <span class="ext"><a href="https://academy.mendix.com/link/paths/56/Create-an-App-with-Advanced-Page-Building">/paths/56</a></span></p>
+
+  <h3 id="path-event">Building an Event App Using Microflows <span class="tag">Intermediate</span></h3>
+  <p>Building an event-management app to practise microflow logic. <span class="ext"><a href="https://academy.mendix.com/link/paths/42/Building-an-Event-App-Using-Microflows">/paths/42</a></span></p>
+
+  <h3 id="path-domain">Expand Your Domain Modeling Skills <span class="tag">Intermediate</span></h3>
+  <p>Going beyond basic entities to richer domain models, such as associations and inheritance. <span class="ext"><a href="https://academy.mendix.com/link/paths/59/Expand-Your-Domain-Modeling-Skills">/paths/59</a></span></p>
+
+  <h3 id="path-adv-domain">Advanced Domain Model Skills <span class="tag">Advanced</span></h3>
+  <p>Designing stable domain models that keep apps fast. It has 8 modules and takes about 6 hours. <span class="ext"><a href="https://academy.mendix.com/link/paths/106/Advanced-Domain-Model-Skills">/paths/106</a></span></p>
+
+  <h3 id="path-data">Win at Working with Data <span class="tag">Advanced</span></h3>
+  <p>How Mendix handles app data and page data sources, with optimization and XPath. It has 5 modules and takes about 4 hours. <span class="ext"><a href="https://academy.mendix.com/link/paths/3/Win-at-Working-with-Data">/paths/3</a></span></p>
+
+  <h3 id="path-security">Configure Advanced Security <span class="tag">Advanced</span></h3>
+  <p>The key parts of Mendix security setup and best practices. It has 6 modules and takes about 4 hours. <span class="ext"><a href="https://academy.mendix.com/link/paths/9/Configure-Advanced-Security">/paths/9</a></span></p>
+
+  <h3 id="path-adv-xpath">Constrain Your Data Using Advanced XPath <span class="tag">Advanced</span></h3>
+  <p>More complex XPath queries and functions that build on the Intermediate XPath path. <span class="ext"><a href="https://academy.mendix.com/link/paths/109/Constrain-your-Data-using-Advanced-XPath">/paths/109</a></span></p>
+
+  <h3 id="path-rest">Design and Publish a REST API <span class="tag">Advanced</span></h3>
+  <p>Exposing your app's data and logic as a published REST service. <span class="ext"><a href="https://academy.mendix.com/link/paths/133/Design-and-Publish-a-REST-API">/paths/133</a></span></p>
+
+  <h3 id="path-logging">Track Application Behavior with Logging <span class="tag">Advanced</span></h3>
+  <p>Using log nodes and log levels to monitor and troubleshoot running apps. <span class="ext"><a href="https://academy.mendix.com/link/paths/104/Track-Application-Behavior-with-Logging">/paths/104</a></span></p>
+
+  <h3 id="path-microflows">Master Modeling Microflows <span class="tag">Advanced</span></h3>
+  <p>Advanced microflow design, including structure, reuse and performance. <span class="ext"><a href="https://academy.mendix.com/link/paths/6/Master-Modeling-Microflows">/paths/6</a></span></p>
+
+  <h3 id="path-errors">Error Handling <span class="tag">Advanced</span></h3>
+  <p>Catching and handling errors in microflows, and how transactions roll back. <span class="ext"><a href="https://academy.mendix.com/link/paths/81/Error-Handling">/paths/81</a></span></p>
+
+  <p class="note">The Academy catalog had no descriptions for the last seven paths above without signing in. Their summaries are based on the path titles, so check them against the Academy.</p>
+</section>
+
+<section id="resources">
+  <h2>Linked pages: other resources</h2>
+  <dl>
+    <dt id="res-docs">Mendix Studio Pro Guide (Reference Guide)</dt>
+    <dd>The official reference documentation for Studio Pro. It covers domain models, pages, microflows, security, integrations and more. The article recommends it for hands-on practice. <span class="ext"><a href="https://docs.mendix.com/refguide/">docs.mendix.com/refguide</a></span></dd>
+    <dt id="res-ilt">Instructor-led trainings (Mendix partner training)</dt>
+    <dd>Paid live courses run by Mendix and its training partners. The article links to these for every tier, and the exam guides mention them too. <span class="ext"><a href="https://partners.home.mendix.com/link/training-overview">partners.home.mendix.com/link/training-overview</a></span></dd>
+    <dt id="res-forum">Mendix Community Forum</dt>
+    <dd>A public Q&amp;A forum for Mendix developers. The article recommends it for community involvement and peer review. <span class="ext"><a href="https://forum.mendix.com/">forum.mendix.com</a></span></dd>
+  </dl>
+</section>
+
+<section id="free-courses">
+  <h2>Free online courses</h2>
+  <p>Free Mendix courses outside the Mendix Academy, shared by the LinkedIn page <em>Free Online Courses</em>.</p>
+  <h3 id="course-master-mendix-2">Master Mendix: Low-Code App Development for All Levels, Part 2 <span class="tag">Udemy</span></h3>
+  <p>A short Udemy course that carries on from Part 1. It covers Studio Pro visual modeling, domain models, microflows for business logic, and security. You don't need any programming background.</p>
+  <table>
+    <tbody>
+      <tr><th>Status</th><td><strong>Closed:</strong> no longer accepting enrollments (checked October 2026). Only people who enrolled earlier can still access it.</td></tr>
+      <tr><th>Length</th><td>6 sections, 14 lectures, about 59 minutes</td></tr>
+      <tr><th>Rating</th><td>4.5 / 5 (10 ratings), 524 students</td></tr>
+      <tr><th>Last updated</th><td>November 2024</td></tr>
+      <tr><th>Before you start</th><td>Finish <a href="#course-master-mendix-1">Part 1</a> first</td></tr>
+    </tbody>
+  </table>
+  <p class="ext">Archived copy: <a href="https://web.archive.org/web/20251219001120/https://www.udemy.com/course/master-mendix-low-code-app-development-for-all-levels-part2/">Wayback Machine, 19 Dec 2025</a> · Udemy: <a href="https://www.udemy.com/course/master-mendix-low-code-app-development-for-all-levels-part2/">master-mendix-low-code-app-development-for-all-levels-part2</a> · Listing: <a href="https://www.onlinetutorials.org/development/master-mendix-low-code-app-development-for-all-levels-part2/">onlinetutorials.org</a> · Original post: <a href="https://www.linkedin.com/posts/development-nocodedevelopment-mendix-share-7466501298184589312-GO5t/">LinkedIn</a></p>
+
+  <h3 id="course-master-mendix-1">Master Mendix: Low-Code App Development for All Levels, Part 1 <span class="tag">Udemy</span></h3>
+  <p>The first part of the series, and the one Part 2 builds on. It has 5 sections and 21 lectures, and a 4.5 / 5 rating (24 ratings) from 623 students.</p>
+  <p><strong>Status: closed.</strong> It no longer accepts enrollments (checked October 2026).</p>
+  <p class="ext">Archived copy: <a href="https://web.archive.org/web/20251219001137/https://www.udemy.com/course/master-mendix-low-code-app-development-for-all-levels-part1/">Wayback Machine, 19 Dec 2025</a> · Udemy: <a href="https://www.udemy.com/course/master-mendix-low-code-app-development-for-all-levels-part1/">master-mendix-low-code-app-development-for-all-levels-part1</a></p>
+  <p class="note">Both courses were listed as free on Udemy when they were archived in December 2025. By October 2026, neither one accepted new students. The archived copies keep only the course description pages, not the videos. Ratings and student counts are from the last time the listings were available.</p>
+</section>
+
+<section id="related">
+  <h2>Other articles</h2>
+  <p>These are not part of the Mendix guide and are listed here as links only.</p>
+  <ul>
+    <li><a href="https://kunalsharda.com/2025/01/28/deepseeks-ai-revolution-smarter-cheaper-and-redefining-the-industry/">DeepSeek’s AI Revolution: Smarter, Cheaper and Redefining the Industry</a> (previous post)</li>
+    <li><a href="https://kunalsharda.com/2025/09/20/three-ways-to-use-ai-agents-without-scaring-compliance/">Three Ways To Use AI Agents Without Scaring Compliance</a> (next post)</li>
+    <li><a href="https://kunalsharda.com/2025/12/16/when-ai-stops-being-a-tool-and-starts-becoming-a-team/">When AI Stops Being a Tool and Starts Becoming a Team</a></li>
+    <li><a href="https://kunalsharda.com/2026/07/07/stop-building-software-in-a-straight-line-the-best-ai-teams-build-in-loops/">Stop Building Software in a Straight Line. The Best AI Teams Build in Loops.</a></li>
+    <li><a href="https://kunalsharda.com/2026/10/24/ai-wasnt-the-problem-the-brief-was/">The AI wasn’t the problem. The brief was.</a></li>
+  </ul>
+  <p class="back"><a href="#overview">↑ Back to top</a></p>
+</section>
+
+</main>
+</div>
+</body>
+</html>
